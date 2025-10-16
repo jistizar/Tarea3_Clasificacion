@@ -26,7 +26,7 @@ El análisis se estructuró en varios pasos clave para asegurar la construcción
 
 ### 1\. Preprocesamiento de Datos
 
-  * **Carga y Consolidación:** Se cargaron los datos de los archivos JSON (los archivos de image_annotations.json) de los conjuntos de entrenamiento, validación y prueba, unificándolos en un único DataFrame de Pandas.
+  * **Carga y Consolidación:** Se cargaron los datos de los archivos JSON (los archivos de image_annotations.json) de los conjuntos de entrenamiento, validación y prueba de la carpeta lars_v1.0.0_annotations, unificándolos en un único DataFrame de Pandas.
   * **Limpieza:** Se eliminaron filas con datos nulos para garantizar la calidad del dataset.
   * **Codificación Numérica:** Se utilizó **One-Hot Encoding** (`pd.get_dummies`) para convertir las características categóricas (como `reflections`) a un formato numérico que el modelo pudiera procesar.
 
